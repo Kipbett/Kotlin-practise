@@ -1,0 +1,15 @@
+fun addNumbers(x:Double, y:Double){
+    val sum = x+y
+    print("Sum $sum")
+}
+
+fun userInfo(vararg names: String){
+    for (name in names){
+        println(name)
+    }
+}
+
+fun main(){
+    addNumbers(3.0, 3.0)
+    userInfo(names = *arrayOf("Bett", "Kipngeno", "Brian"))
+}
